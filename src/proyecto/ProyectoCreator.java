@@ -9,8 +9,12 @@ public class ProyectoCreator implements Creator<IntegerGenotype>
 {
 	public IntegerGenotype create(){
 		
-		IntegerGenotype genotipo = new IntegerGenotype(1,60);
-		genotipo.init(new Random(), Data.NUM_GRUPOS_TOTAL);
+		/**
+		 * Pilla NUM_GRUPOS_TOTAL numeros del 0 al 2 para el genotipo a lo random
+		 * correspondiente a la vacuna aplicada
+		 * **/
+		IntegerGenotype genotipo = new IntegerGenotype(0, Data.NUM_VACUNAS-1);
+		genotipo.init(new Random(), Data.NUM_GRUPOS_TOTAL); 	// Array de 13 numeros
 		
 		return genotipo;
 	}

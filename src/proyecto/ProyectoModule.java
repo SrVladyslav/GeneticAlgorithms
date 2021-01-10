@@ -8,7 +8,7 @@ public class ProyectoModule extends ProblemModule
 	@Override
 	protected void config() 
 	{
-		// mostrará errores mientras ProyectoCreator, ProyectoDecoder y ProyectoEvaluator no estén completos
+		// mostrar errores mientras ProyectoCreator, ProyectoDecoder y ProyectoEvaluator no estan completos
 		bindProblem(ProyectoCreator.class, ProyectoDecoder.class, ProyectoEvaluator.class);
 	}
 
